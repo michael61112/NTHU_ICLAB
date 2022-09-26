@@ -1,0 +1,128 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.2415008544921875,
+                0.094458,
+                0.059286999999999999,
+                278668,
+                292128,
+                1664186311.1336579,
+                1655518354138613
+            ],
+            "nMops": 0,
+            "child_modules": {
+                "test_alu": 1
+            },
+            "end_perf": [
+                0.25060391426086426,
+                0.096199999999999994,
+                0.062128999999999997,
+                280088,
+                292128,
+                1655518377896526,
+                0,
+                0
+            ],
+            "nQuads": 0,
+            "nRouts": 5
+        },
+        "test_alu": {
+            "start_perf": [
+                0.25077700614929199,
+                0.096296000000000007,
+                0.062191000000000003,
+                280088,
+                292128,
+                1664186311.1429341,
+                1655518378259810
+            ],
+            "child_modules": {},
+            "nMops": 1179,
+            "Compiled": "Yes",
+            "end_perf": [
+                0.28667092323303223,
+                0.12520999999999999,
+                0.069114999999999996,
+                286708,
+                292128,
+                1655518471660704,
+                8589934593,
+                0
+            ],
+            "Compiled Times": 19,
+            "significant_routs": [
+                [
+                    4,
+                    "R_VCSgd_mizGR_4",
+                    2836389,
+                    168,
+                    26
+                ],
+                [
+                    32,
+                    "R_VCSgd_mizGR_20",
+                    5504518,
+                    1782,
+                    376
+                ]
+            ],
+            "nQuads": 433,
+            "nRouts": 40
+        }
+    },
+    "CompUnits": {
+        "mizGR_d": {
+            "mod": "test_alu",
+            "out": "mizGR_d.o",
+            "bytes": 24998,
+            "checksum": 0,
+            "text": 7480,
+            "mode": 4,
+            "archive": "archive.18/_10061_archive_1.a"
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "mizGR_d.o",
+                    24998
+                ],
+                [
+                    "amcQwB.o",
+                    106292
+                ]
+            ],
+            "archive": "archive.18/_10061_archive_1.a",
+            "size": 131290
+        }
+    ],
+    "stat": {
+        "peak_mem_kb": 292128,
+        "ru_self_end": {
+            "ru_nivcsw": 43,
+            "ru_minflt": 27984,
+            "ru_utime_sec": 0.13029099999999999,
+            "ru_maxrss_kb": 80112,
+            "ru_stime_sec": 0.072161000000000003,
+            "ru_nvcsw": 32,
+            "ru_majflt": 0
+        },
+        "ru_childs_end": {
+            "ru_nivcsw": 18,
+            "ru_minflt": 5054,
+            "ru_utime_sec": 0.0098630000000000002,
+            "ru_maxrss_kb": 21296,
+            "ru_stime_sec": 0.023754999999999998,
+            "ru_nvcsw": 9,
+            "ru_majflt": 0
+        },
+        "cpu_cycles_end": 1655518492624379
+    }
+}
